@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: 50,),
               InkWell(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (_)=>upload()));
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=>Upload()));
                 },
                 child: Container(
 

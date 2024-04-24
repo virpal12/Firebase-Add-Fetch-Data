@@ -13,7 +13,8 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:                                   Text(
+        title:
+        Text(
           'Personal Details',
           style: TextStyle(
               fontSize: 34,
@@ -21,7 +22,8 @@ class _ProfileState extends State<Profile> {
         ),
 
       ),
-        body: StreamBuilder(
+        body:
+        StreamBuilder(
             stream:
                 FirebaseFirestore.instance.collection("Profile").snapshots(),
             builder: (context, snapshot) {

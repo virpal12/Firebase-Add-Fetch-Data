@@ -1,10 +1,8 @@
 
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:login_task/Screen/Home.dart';
 
-
+import 'Home.dart';
 import 'Login.dart';
 
 class CheckUser extends StatefulWidget {
@@ -17,11 +15,11 @@ class CheckUser extends StatefulWidget {
 class _CheckUserState extends State<CheckUser> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Currentuser();
   }
 
-  Checkuser()async{
-    final user = FirebaseAuth.instance.currentUser;
+   Currentuser(){
+    final user =  FirebaseAuth.instance.currentUser;
 
     if(user!= null){
       return HomeScreen();

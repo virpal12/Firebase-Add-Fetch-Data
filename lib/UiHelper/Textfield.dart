@@ -26,9 +26,5 @@ class Costum {
 
   }
 
-  static Button ( String text, Text ? Widget){
-    ElevatedButton(onPressed: (){}, child: Widget,
-    style: ElevatedButton.styleFrom(minimumSize: Size(300, 50)),
-    );
-  }
+
 }
